@@ -22,9 +22,10 @@ raw-window-handle = "0.3"
 glam = "0.8"
 log = "0.4"
 guillotiere = "0.5"
-# Pin `gfx-memory` until https://github.com/gfx-rs/wgpu-rs/issues/261 is
-# resolved
-gfx-memory = "=0.1.1"
+
+[dependencies.gfx-memory]
+git = "https://github.com/gfx-rs/gfx-extras"
+rev = "473a4cdc63463e7986707507c4a7f6a3a767e329"
 
 [dependencies.iced_native]
 version = "0.2"
